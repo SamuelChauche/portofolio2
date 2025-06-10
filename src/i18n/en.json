@@ -8,17 +8,17 @@
     },
     "home": {
         "welcome": "Welcome to my portfolio!",
-        "intro": "I'm a passionate web developer specialized in modern React applications.",
-        "cta": "See my projects"
+        "intro": "I'm Samuel Chauche, 38 years old, based in Montpellier. With 7 years of experience in technical support, I'm transitioning to web development with a particular passion for Web3 and decentralized technologies.",
+        "cta": "Discover my journey"
     },
     "about": {
-        "title": "About Me",
-        "text": "Hello! My name is John Doe. I love coding, learning new technologies, and building beautiful interfaces. With a solid background in JavaScript, I focus now on React and modern web development."
+        "title": "About me",
+        "text": "My name is Samuel Chauche, I'm 38 years old and I live in Montpellier. After 7 years of experience in technical support, I'm turning to web development with a special interest in Web3. My goal is to help build a more democratic and decentralized internet. I enjoy creating technical solutions while maintaining a user-centered approach."
     },
     "skills": {
-        "title": "My Skills",
-        "frontend": "Frontend",
-        "backend": "Backend",
+        "title": "My skills",
+        "frontend": "Front-end",
+        "backend": "Back-end",
         "other": "Other",
         "frontendList": [
             "React",
@@ -30,31 +30,35 @@
         "backendList": [
             "Node.js",
             "Express",
-            "MongoDB"
+            "MongoDB",
+            "Blockchain basics",
+            "Smart contracts"
         ],
         "otherList": [
             "Git",
             "Figma",
-            "Agile"
+            "Agile",
+            "Technical support",
+            "Problem solving"
         ]
     },
     "projects": {
         "title": "Projects",
-        "empty": "No project to display yet."
+        "empty": "I'm currently working on exciting Web3 projects. Come back soon to discover my achievements!"
     },
     "contact": {
-        "title": "Contact Me",
-        "description": "Feel free to reach out! Fill in the form below or send me an email.",
+        "title": "Contact me",
+        "description": "Interested in my profile or a collaboration in Web3? Feel free to contact me to discuss innovative projects or professional opportunities.",
         "form": {
             "name": "Your name",
             "email": "Your email",
             "message": "Your message",
             "submit": "Send"
         },
-        "success": "Thank you for reaching out! I'll get back to you soon."
+        "success": "Thank you for your message! I will get back to you soon."
     },
     "footer": {
         "made_with": "Made with React",
-        "by": "by John Doe"
+        "by": "by Samuel Chauche"
     }
 }

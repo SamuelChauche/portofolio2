@@ -8,12 +8,12 @@
     },
     "home": {
         "welcome": "Bienvenue sur mon portfolio !",
-        "intro": "Je suis un développeur web passionné, spécialisé dans les applications React modernes.",
-        "cta": "Voir mes projets"
+        "intro": "Je suis Samuel Chauche, 38 ans, basé à Montpellier. Avec 7 ans d'expérience en support technique, je me reconvertis dans le développement web avec une passion particulière pour le Web3 et les technologies décentralisées.",
+        "cta": "Découvrir mon parcours"
     },
     "about": {
         "title": "À propos de moi",
-        "text": "Bonjour ! Je m'appelle Samuel Chauche J'adore coder, apprendre de nouvelles technologies et créer de belles interfaces. Avec une solide expérience en JavaScript, je me concentre aujourd'hui sur React et le développement web moderne."
+        "text": "Je m'appelle Samuel Chauche, j'ai 38 ans et j'habite à Montpellier. Après 7 ans d'expérience dans le support technique, je me tourne vers le développement web avec un intérêt particulier pour le Web3. Mon objectif est de contribuer à construire un internet plus démocratique et décentralisé. J'aime créer des solutions techniques tout en gardant une approche centrée sur l'utilisateur."
     },
     "skills": {
         "title": "Mes compétences",
@@ -30,21 +30,25 @@
         "backendList": [
             "Node.js",
             "Express",
-            "MongoDB"
+            "MongoDB",
+            "Blockchain basics",
+            "Smart contracts"
         ],
         "otherList": [
             "Git",
             "Figma",
-            "Agile"
+            "Agile",
+            "Support technique",
+            "Résolution de problèmes"
         ]
     },
     "projects": {
         "title": "Projets",
-        "empty": "Aucun projet à afficher pour le moment."
+        "empty": "Je travaille actuellement sur des projets Web3 passionnants. Revenez bientôt pour découvrir mes réalisations !"
     },
     "contact": {
         "title": "Me contacter",
-        "description": "N'hésitez pas à me contacter ! Remplissez le formulaire ci-dessous ou envoyez-moi un e-mail.",
+        "description": "Intéressé par mon profil ou par une collaboration dans le Web3 ? N'hésitez pas à me contacter pour discuter de projets innovants ou d'opportunités professionnelles.",
         "form": {
             "name": "Votre nom",
             "email": "Votre e-mail",
@@ -55,6 +59,6 @@
     },
     "footer": {
         "made_with": "Réalisé avec React",
-        "by": "par John Doe"
+        "by": "par Samuel Chauche"
     }
 }

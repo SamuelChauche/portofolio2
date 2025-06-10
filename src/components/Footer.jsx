@@ -12,7 +12,7 @@ function Footer() {
                 © {new Date().getFullYear()} - Ton Nom.
             </p>
             <a
-                href="https://github.com/tonusername"
+                href="https://github.com/SamuelChauche"
                 target="_blank"
                 rel="noopener noreferrer"
             >

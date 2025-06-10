@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
-import LanguageProvider from "../contexts/LanguageProvider";
 import { useTranslation } from "react-i18next";
-import ThemeProvider from "../contexts/ThemeProvider";
+import { useContext } from "react";
+import { ThemeContext } from "../contexts/ThemeContext";
 
 function Header() {
     const { i18n } = useTranslation();
+    const { theme, toggleTheme } = useContext(ThemeContext);
 
     return (
         <header>
@@ -16,7 +17,19 @@ function Header() {
             <Link to="/about">À propos</Link>
             <Link to="/skills">Skills</Link>
             <Link to="/contact">Contact</Link>
-            <ThemeProvider />
+            <button
+                onClick={toggleTheme}
+                style={{
+                    background: "transparent",
+                    border: "1px solid #aaa",
+                    borderRadius: "20px",
+                    padding: "5px 12px",
+                    cursor: "pointer",
+                    marginLeft: "1em"
+                }}
+            >
+                {theme === "dark" ? "🌙 Dark" : "☀️ Light"}
+            </button>
         </header>
     );
 }
