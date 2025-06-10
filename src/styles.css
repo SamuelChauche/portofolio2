@@ -1,0 +1,378 @@
+:root {
+    --footer-bg: #f5f5f5;
+    --footer-text: #444;
+    --header-bg: #fff;
+    --header-text: #000316;
+    --main-bg: #fff;
+    --main-text: #222;
+    --h-color: #000316;
+    --card-bg: #fff;
+    --card-text: #222;
+}
+
+body[data-theme="dark"] {
+    --footer-bg: #222;
+    --footer-text: #eee;
+    --header-bg: #231e2150;
+    --header-text: #fff;
+    --main-bg: #14151a;
+    --main-text: #dbdbdb;
+    --h-color: #fff;
+    --card-bg: #23242a;
+    --card-text: #eee;
+}
+
+/* Header */
+header {
+    min-height: 60px;
+    width: 100%;
+    /* ajuste la hauteur selon tes besoins */
+    background: var(--header-bg);
+    color: var(--header-text);
+
+    /* exemple, adapte la couleur */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* ou start/end selon ton contenu */
+    padding: 0 2rem;
+    /* espace à gauche et à droite */
+    box-sizing: border-box;
+    z-index: 100;
+    width: 100vw;
+    /* toute la largeur */
+    height: 80px;
+    /* fixe, ou 100vh si tu veux toute la hauteur */
+    position: fixed;
+    /* pour qu’il reste toujours en haut */
+    top: 0;
+    left: 0;
+    z-index: 100;
+    color: #000316;
+}
+
+header a{
+    color: var(--header-text);
+}
+header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    filter: blur(50px);
+    pointer-events: none;
+}
+main {
+    flex: 1 1 auto;
+    width: 100%;
+    padding-top: 80px;
+}
+
+main, .home, .skills, .skills-page {
+    background: var(--main-bg) !important;
+    color: var(--main-text) !important;
+}
+
+/* ===== SKILLS PAGE ===== */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+.skills, .skills-page {
+    padding-top: 80px; /* La même hauteur que header */
+    background: var(--card-bg) !important;
+    color: var(--card-text) !important;
+    width: 100vw;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background: var(--main-bg);
+}
+
+.skill-card {
+    background: var(--card-bg) !important;
+    color: var(--card-text) !important;
+    border: 1px solid #474c55;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform var(--transition);
+}
+
+.skill-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.skill-level {
+    height: 8px;
+    background-color: #e2e8f0;
+    border-radius: 4px;
+    margin: 0.5rem 0;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    background-color: black;
+    border-radius: 4px;
+}
+
+.skills-category {
+    margin-bottom: 2rem;
+}
+
+.skills-category ul {
+    list-style: disc inside;
+    padding-left: 1rem;
+}
+
+.home {
+    min-height: 100vh;
+    /* Hauteur minimum = hauteur de la fenêtre */
+    width: 100vw;
+    /* Toute la largeur de la fenêtre */
+    display: flex;
+    /* Pour centrer le contenu facilement */
+    flex-direction: column;
+    justify-content: center;
+    /* Centrage vertical */
+    align-items: center;
+    /* Facultatif : couleur de fond */
+    box-sizing: border-box;
+    padding-top: 120px;
+    /* Ajuste selon la hauteur de ton header fixe */
+    padding-bottom: 40px;
+    /* Pour éviter de coller au footer */
+}
+
+/* Footer styling */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    margin-top: auto;
+}
+
+.footer a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.lang-switcher {
+    display: inline-block;
+}
+
+.lang-switcher button {
+    background: none;
+    border: 1px solid var(--footer-text, #444);
+    margin: 0 0.25rem;
+    padding: 0.35rem 0.75rem;
+    cursor: pointer;
+    font-weight: 400;
+    color: var(--footer-text, #444);
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.lang-switcher button.active,
+.lang-switcher button:hover {
+    background: var(--footer-text, #444);
+    color: var(--footer-bg, #f5f5f5);
+}
+
+.project-card {
+    background: var(--card-bg) !important;
+    color: var(--card-text) !important;
+    border: 1px solid #474c55;
+    padding: 1.2rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    box-shadow: 0 2px 8px 0 #0001;
+    transition: box-shadow 0.2s;
+}
+
+.project-card:hover {
+    box-shadow: 0 4px 24px 0 #0002;
+}
+
+.project-card h3 {
+    margin: 0 0 0.5rem;
+}
+
+.project-card a {
+    color: #3466af;
+    text-decoration: none;
+}
+
+.project-card .project-lang {
+    display: inline-block;
+    background: #e2eaff;
+    color: #335;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    padding: 0.2rem 0.6rem;
+    margin-top: 0.6rem;
+    margin-bottom: 0.3rem;
+}
+
+html,
+body {
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f9f9fb;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+body[data-theme="dark"] .skill-progress {
+    background-color: #fd6334;
+}
+
+body[data-theme="dark"] .skill-level {
+    background-color: #333c44;
+}
+
+section {
+    max-width: none;
+    width: 100vw;
+    min-height: 90vh;
+    margin: 0;
+    padding: 2rem 2.5rem;
+    border-radius: 0;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    background: var(--main-bg);
+    color: var(--main-text);
+}
+
+/* Blurring SEULEMENT sur le fond avec ::before  */
+section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    filter: blur(20px);
+    opacity: 1;
+    pointer-events: none;
+}
+section > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+h1, h2, h3 {
+    color: var(--h-color);
+}
+
+h1,
+h2 {
+
+    margin-bottom: 1rem;
+}
+h3 {
+
+    margin-bottom: 0.5rem;
+}
+
+.button,
+a.button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.8em 2em;
+    background: #fd6334;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background .2s, box-shadow .2s;
+    box-shadow: 0 2px 9px rgba(35, 85, 172, 0.1);
+}
+
+.button:hover,
+a.button:hover {
+    background: linear-gradient(80deg, #3c6cbb 30%, #69a2ef 100%);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #c0d3fa;
+    border-radius: 4px;
+    font-size: 1em;
+    background: #f1f5fa;
+    transition: border .2s;
+}
+
+input:focus,
+textarea:focus {
+    border: 1.5px solid #2355ac;
+    outline: none;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+
+
+@media (max-width: 600px) {
+    section {
+        padding: 1rem 0.5rem;
+        border-radius: 7px;
+    }
+
+    h1,
+    h2 {
+        font-size: 1.6rem;
+    }
+}
+
+body.light {
+    background: #fff;
+    color: #222;
+    transition: background 0.3s, color 0.3s;
+}
+
+body.dark {
+    background: #14151a;
+    color: #dbdbdb;
+    transition: background 0.3s, color 0.3s;
+}

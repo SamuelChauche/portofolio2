@@ -1,0 +1,60 @@
+{
+    "navbar": {
+        "home": "Accueil",
+        "about": "À propos",
+        "skills": "Compétences",
+        "projects": "Projets",
+        "contact": "Contact"
+    },
+    "home": {
+        "welcome": "Bienvenue sur mon portfolio !",
+        "intro": "Je suis un développeur web passionné, spécialisé dans les applications React modernes.",
+        "cta": "Voir mes projets"
+    },
+    "about": {
+        "title": "À propos de moi",
+        "text": "Bonjour ! Je m'appelle Samuel Chauche J'adore coder, apprendre de nouvelles technologies et créer de belles interfaces. Avec une solide expérience en JavaScript, je me concentre aujourd'hui sur React et le développement web moderne."
+    },
+    "skills": {
+        "title": "Mes compétences",
+        "frontend": "Front-end",
+        "backend": "Back-end",
+        "other": "Autres",
+        "frontendList": [
+            "React",
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "TypeScript"
+        ],
+        "backendList": [
+            "Node.js",
+            "Express",
+            "MongoDB"
+        ],
+        "otherList": [
+            "Git",
+            "Figma",
+            "Agile"
+        ]
+    },
+    "projects": {
+        "title": "Projets",
+        "empty": "Aucun projet à afficher pour le moment."
+    },
+    "contact": {
+        "title": "Me contacter",
+        "description": "N'hésitez pas à me contacter ! Remplissez le formulaire ci-dessous ou envoyez-moi un e-mail.",
+        "form": {
+            "name": "Votre nom",
+            "email": "Votre e-mail",
+            "message": "Votre message",
+            "submit": "Envoyer"
+        },
+        "success": "Merci pour votre message ! Je vous répondrai rapidement."
+    },
+    "footer": {
+        "made_with": "Réalisé avec React",
+        "by": "par John Doe"
+    }
+}

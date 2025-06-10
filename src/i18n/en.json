@@ -1,0 +1,60 @@
+{
+    "navbar": {
+        "home": "Home",
+        "about": "About",
+        "skills": "Skills",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "home": {
+        "welcome": "Welcome to my portfolio!",
+        "intro": "I'm a passionate web developer specialized in modern React applications.",
+        "cta": "See my projects"
+    },
+    "about": {
+        "title": "About Me",
+        "text": "Hello! My name is John Doe. I love coding, learning new technologies, and building beautiful interfaces. With a solid background in JavaScript, I focus now on React and modern web development."
+    },
+    "skills": {
+        "title": "My Skills",
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "other": "Other",
+        "frontendList": [
+            "React",
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "TypeScript"
+        ],
+        "backendList": [
+            "Node.js",
+            "Express",
+            "MongoDB"
+        ],
+        "otherList": [
+            "Git",
+            "Figma",
+            "Agile"
+        ]
+    },
+    "projects": {
+        "title": "Projects",
+        "empty": "No project to display yet."
+    },
+    "contact": {
+        "title": "Contact Me",
+        "description": "Feel free to reach out! Fill in the form below or send me an email.",
+        "form": {
+            "name": "Your name",
+            "email": "Your email",
+            "message": "Your message",
+            "submit": "Send"
+        },
+        "success": "Thank you for reaching out! I'll get back to you soon."
+    },
+    "footer": {
+        "made_with": "Made with React",
+        "by": "by John Doe"
+    }
+}
