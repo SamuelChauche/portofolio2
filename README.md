@@ -7,7 +7,6 @@ Ce site vitrine est développé avec **React**, stylisé avec **CSS** moderne, e
 
 ## 🚀 Aperçu
 
-- 🌐 [Lien du site en ligne](https://ton-site.com) *(ajoute ton lien déployé ici)*
 - 🎨 Mode clair & sombre
 - 🌏 Internationalisation (français/anglais)
 - ⚡ Navigation rapide (React Router)
@@ -75,11 +74,6 @@ src/
 - **Compétences** : Technologies front & back.
 - **Projets** : Liste détaillée, liens vers les repos/code.
 - **Contact** : Formulaire ou lien direct.
-
-## 🖼️ Capture d'écran
-
-![Aperçu du site](./screenshot.png)  
-*(Ajoute une capture d’écran dans ton repo)*
 
 ## 👨‍💻 Auteur
 
