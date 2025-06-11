@@ -83,7 +83,7 @@ src/
 
 ## 👨‍💻 Auteur
 
-- **Nom** : [Ton Prénom, Ton Nom]
+- **Nom** : Chauche Samuel
 - **Contact** : [samuel.chauche@gmail.com]]
 - **Github** : [@SamuelChauche](https://github.com/SamuelChauche)
 
